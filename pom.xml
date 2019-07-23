@@ -12,7 +12,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>alr</groupId>
+    <groupId>com.alr</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -25,19 +25,28 @@
     <description>SFG Pet Clinic Project</description>
 
     <properties>
-        <java.version>1.8</java.version>
-        <start-class>alr.sfgpetclinic.SfgPetClinicApplication</start-class>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>11</java.version>
     </properties>
 
-    <dependencies>
-
-    </dependencies>
+    <scm>
+        <developerConnection>scm:git:git@github.com:allanroberto18/sfg-pet-clinic.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
             </plugin>
         </plugins>
     </build>
