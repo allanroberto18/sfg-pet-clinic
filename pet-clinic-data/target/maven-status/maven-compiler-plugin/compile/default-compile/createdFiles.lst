@@ -1,0 +1,5 @@
+com/alr/sfgpetclinic/models/Person.class
+com/alr/sfgpetclinic/models/PetType.class
+com/alr/sfgpetclinic/models/Vet.class
+com/alr/sfgpetclinic/models/Pet.class
+com/alr/sfgpetclinic/models/Owner.class
